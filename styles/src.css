@@ -1,0 +1,343 @@
+
+
+.vietcard-container {
+    margin: 50px 0;
+}
+
+.vietcard-container,
+.vietcard-container * {
+    box-sizing: border-box;
+}
+
+.vietcard-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+.vietcard {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    font-size: 18px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, .66);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.vietcard:hover {
+    box-shadow: 0 34px 32px -33px rgba(0, 0, 0, .18);
+    transform: translate(0px, -3px);
+}
+
+.vietcard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(-70deg, #424242, transparent 50%);
+    opacity: 0.07;
+}
+
+.vietcard:nth-child(2n)::before {
+    background-image: linear-gradient(-250deg, #424242, transparent 50%);
+}
+
+.vietcard-innerbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.vietcard-img {
+    position: absolute;
+    height: 300px;
+    width: 400px;
+    top: 0;
+    left: 0;
+    transition: transform 0.2s ease;
+}
+
+.vietcard:nth-child(2n) .vietcard-img {
+    left: initial;
+    right: 0;
+}
+
+.vietcard:hover .vietcard-img {
+    transform: scale(1.05) rotate(1deg);
+}
+
+.vietcard:hover .vietcard-bar {
+    width: 70px;
+}
+
+.vietcard-textbox {
+    position: absolute;
+    top: 7%;
+    bottom: 7%;
+    left: 430px;
+    width: calc(100% - 470px);
+    font-size: 17px;
+}
+
+.vietcard:nth-child(2n) .vietcard-textbox {
+    left: initial;
+    right: 430px;
+}
+
+.vietcard-textbox::before,
+.vietcard-textbox::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: #ff0000bb;
+    background: #fff;
+    top: -20%;
+    left: -55px;
+    height: 140%;
+    width: 60px;
+    transform: rotate(8deg);
+}
+
+.vietcard:nth-child(2n) .vietcard-textbox::before {
+    display: none;
+}
+
+.vietcard-textbox::after {
+    display: none;
+    left: initial;
+    right: -55px;
+}
+
+.vietcard:nth-child(2n) .vietcard-textbox::after {
+    display: block;
+}
+
+.vietcard-textbox * {
+    position: relative;
+}
+
+.vietcard-title {
+    font-family: 'Voces', 'Open Sans', arial, sans-serif;
+    font-size: 24px;
+}
+
+.vietcard-subtitle {
+    font-family: 'Voces', 'Open Sans', arial, sans-serif;
+    color: #888;
+}
+
+.vietcard-bar {
+    left: -2px;
+    width: 50px;
+    height: 5px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #424242;
+    transition: width 0.2s ease;
+}
+
+.vietcard-blue .vietcard-bar {
+    background-color: #0088FF;
+}
+
+.vietcard-blue::before {
+    background-image: linear-gradient(-70deg, #0088FF, transparent 50%);
+}
+
+.vietcard-blue:nth-child(2n)::before {
+    background-image: linear-gradient(-250deg, #0088FF, transparent 50%);
+}
+
+.vietcard-red .vietcard-bar {
+    background-color: #D62F1F;
+}
+
+.vietcard-red::before {
+    background-image: linear-gradient(-70deg, #D62F1F, transparent 50%);
+}
+
+.vietcard-red:nth-child(2n)::before {
+    background-image: linear-gradient(-250deg, #D62F1F, transparent 50%);
+}
+
+.vietcard-green .vietcard-bar {
+    background-color: #40BD00;
+}
+
+.vietcard-green::before {
+    background-image: linear-gradient(-70deg, #40BD00, transparent 50%);
+}
+
+.vietcard-green:nth-child(2n)::before {
+    background-image: linear-gradient(-250deg, #40BD00, transparent 50%);
+}
+
+.vietcard-yellow .vietcard-bar {
+    background-color: #F5AF41;
+}
+
+.vietcard-yellow::before {
+    background-image: linear-gradient(-70deg, #F5AF41, transparent 50%);
+}
+
+.vietcard-yellow:nth-child(2n)::before {
+    background-image: linear-gradient(-250deg, #F5AF41, transparent 50%);
+}
+
+.vietcard-orange .vietcard-bar {
+    background-color: #FF5722;
+}
+
+.vietcard-orange::before {
+    background-image: linear-gradient(-70deg, #FF5722, transparent 50%);
+}
+
+.vietcard-orange:nth-child(2n)::before {
+    background-image: linear-gradient(-250deg, #FF5722, transparent 50%);
+}
+
+.vietcard-brown .vietcard-bar {
+    background-color: #C49863;
+}
+
+.vietcard-brown::before {
+    background-image: linear-gradient(-70deg, #C49863, transparent 50%);
+}
+
+.vietcard-brown:nth-child(2n)::before {
+    background-image: linear-gradient(-250deg, #C49863, transparent 50%);
+}
+
+.vietcard-grey .vietcard-bar {
+    background-color: #424242;
+}
+
+.vietcard-grey::before {
+    background-image: linear-gradient(-70deg, #424242, transparent 50%);
+}
+
+.vietcard-grey:nth-child(2n)::before {
+    background-image: linear-gradient(-250deg, #424242, transparent 50%);
+}
+
+.vietcard-customcolor .vietcard-bar {
+    background-color: var(--vietcard-color);
+}
+
+.vietcard-customcolor::before {
+    background-image: linear-gradient(-70deg, var(--vietcard-color), transparent 50%);
+}
+
+.vietcard-customcolor:nth-child(2n)::before {
+    background-image: linear-gradient(-250deg, var(--vietcard-color), transparent 50%);
+}
+
+.vietcard-description {
+    z-index: 10;
+    font-size: 15px;
+    color: #424242;
+    height: 125px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.vietcard-tagbox {
+    position: absolute;
+    bottom: 3%;
+    font-size: 14px;
+    cursor: default;
+    user-select: none;
+    pointer-events: none;
+}
+
+.vietcard-tag {
+    display: inline-block;
+    background: #E0E0E0;
+    color: #777;
+    border-radius: 3px 0 0 3px;
+    line-height: 26px;
+    padding: 0 10px 0 23px;
+    position: relative;
+    margin-right: 20px;
+    cursor: default;
+    user-select: none;
+    transition: color 0.2s;
+}
+
+.vietcard-tag::before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+    height: 6px;
+    left: 10px;
+    width: 6px;
+    top: 10px;
+}
+
+.vietcard-tag::after {
+    content: '';
+    position: absolute;
+    border-bottom: 13px solid transparent;
+    border-left: 10px solid #E0E0E0;
+    border-top: 13px solid transparent;
+    right: -10px;
+    top: 0;
+}
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body { background:rgb(228, 228, 237); }
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:rgb(219, 7, 166);
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#cc66cc;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#581a51; }
