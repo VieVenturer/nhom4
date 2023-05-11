@@ -1,0 +1,129 @@
+.containerlydo {
+    width: 100%;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.package-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1000px) {
+    h2.content-jumbotron {
+        font-size: 60px;
+    }
+
+    button.see-more {
+        font-size: 47px;
+    }
+
+    span.why-choose {
+        font-size: 47px !important;
+    }
+
+    div.packages {
+        width: 90%;
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 70px !important;
+    }
+
+    #text_for_personal,
+    #text_for_bussines {
+        font-size: 35px;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .switch {
+        display: block !important;
+        width: 125px !important;
+        height: 62px !important;
+        margin: 0 auto;
+    }
+
+    .slider:before {
+        height: 56px !important;
+        width: 56px !important;
+        left: 39px !important;
+    }
+}
+
+.packages {
+    margin: 20px 20px 53px 20px;
+    width: 300px;
+    padding-bottom: 1.5em;
+    height: 100%;
+    background-color: #1B1F3A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 19px 38px rgba(30, 35, 33, 1), 0 15px 12px rgba(30, 35, 33, 0.2);
+    flex-wrap: wrap;
+    color: #f4f4f4;
+}
+
+div.why-choose {
+    background: white;
+}
+
+span.why-choose {
+    font-family: 'Play', sans-serif;
+    margin: 0 20px;
+    font-size: 20px;
+    color: #1B1F3A;
+}
+
+p.why-choose {
+    font-family: 'Play', sans-serif;
+    margin: 10px 25px;
+    text-align: justify;
+    color: #1B1F3A;
+    font-weight: bold;
+}
+
+div.img-card {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 27px auto;
+    background: white;
+    border-radius: 50%;
+    border: 3px solid #000000;
+}
+
+a.media-button .fa {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size: 24px;
+    color: #262626;
+    transition: .5s;
+}
+
+ul li:nth-child(1) a.media-button:hover .fa {
+    color: #3b5998;
+}
+
+ul li:nth-child(3) a.media-button:hover .fa {
+    color: red;
+}
+
+ul li:nth-child(2) a.media-button:hover .fa {
+    color: #0266C8;
+}
