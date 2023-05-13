@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đọc Tài Liệu</title>
+
+    <link rel="shortcut icon" type="image/png" href="../img/logotrl.ico"/>
+    <script>
+        fetch('header.shtml')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+    <script>
+        fetch('tailieu.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('tailieu').innerHTML = data;
+            });
+    </script>
+</head>
+<div id="header"></div>
+<div id="tailieu"></div>
+
+<script src="../app.js"></script>
+
+<body>
+    
+</body>
+
+</html>
