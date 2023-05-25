@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Nhóm 4 - Learning </title>
+    <link rel="shortcut icon" type="image/png" href="./img/logotrl.ico" />
+    <script>
+        const fetchAndSetHTML = (url, elementId) => {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                });
+        };
+        Promise.all([
+            fetchAndSetHTML('./Anlpha/header.html', 'header'),
+            fetchAndSetHTML('./Anlpha/giaodiendau.html', 'giaodiendau'),
+            fetchAndSetHTML('dskhoahoc.shtml', 'dskhoahoc'),
+            fetchAndSetHTML('./Anlpha/footer.html', 'footer'),
+            fetchAndSetHTML('book.shtml', 'book')
+        ]);
+    </script>
+</head>
+
+<body onkeydown="return false">
+    <div id="header"></div>
+    <script src="../app.js"></script>
+    </head>
+
+        <div id="giaodiendau"></div>
+    <div id="footer"></div>
+    </body>
+</html>
