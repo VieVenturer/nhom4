@@ -1,17 +1,14 @@
 .vietcard-container {
     margin: 50px 0
 }
-
 .vietcard-container,.vietcard-container * {
     box-sizing: border-box
 }
-
 .vietcard-container {
     margin-left: auto;
     margin-right: auto;
     width: 1000px
 }
-
 .vietcard {
     position: relative;
     width: 100%;
@@ -26,12 +23,10 @@
     box-shadow: 0 4px 21px -12px rgba(0,0,0,.66);
     transition: box-shadow .2s ease,transform .2s ease
 }
-
 .vietcard:hover {
     box-shadow: 0 34px 32px -33px rgba(0,0,0,.18);
     transform: translate(0,-3px)
 }
-
 .vietcard::before {
     content: "";
     position: absolute;
@@ -54,7 +49,6 @@
     bottom: 0;
     left: 0
 }
-
 .vietcard-img {
     position: absolute;
     height: 300px;
@@ -63,20 +57,16 @@
     left: 0;
     transition: transform .2s ease;
 }
-
 .vietcard:nth-child(2n) .vietcard-img {
     left: initial;
     right: 0
 }
-
 .vietcard:hover .vietcard-img {
     transform: scale(1.05) rotate(1deg)
 }
-
 .vietcard:hover .vietcard-bar {
     width: 70px
 }
-
 .vietcard-textbox {
     position: absolute;
     top: 7%;
@@ -85,12 +75,10 @@
     width: calc(100% - 470px);
     font-size: 17px
 }
-
 .vietcard:nth-child(2n) .vietcard-textbox {
     left: initial;
     right: 430px
 }
-
 .vietcard-textbox::after,.vietcard-textbox::before {
     content: "";
     position: absolute;
@@ -103,35 +91,28 @@
     width: 60px;
     transform: rotate(8deg)
 }
-
 .vietcard:nth-child(2n) .vietcard-textbox::before {
     display: none
 }
-
 .vietcard-textbox::after {
     display: none;
     left: initial;
     right: -55px
 }
-
 .vietcard:nth-child(2n) .vietcard-textbox::after {
     display: block
 }
-
 .vietcard-textbox * {
     position: relative
 }
-
 .vietcard-title {
     font-family: Voces,'Open Sans',arial,sans-serif;
     font-size: 24px
 }
-
 .vietcard-subtitle {
     font-family: Voces,'Open Sans',arial,sans-serif;
     color: #888
 }
-
 .vietcard-bar {
     left: -2px;
     width: 50px;
@@ -141,15 +122,12 @@
     background-color: #424242;
     transition: width .2s ease
 }
-
 .vietcard-blue .vietcard-bar {
     background-color: #08f
 }
-
 .vietcard-blue::before {
     background-image: linear-gradient(-70deg,#08f,transparent 50%)
 }
-
 .vietcard-blue:nth-child(2n)::before {
     background-image: linear-gradient(-250deg,#08f,transparent 50%)
 }
