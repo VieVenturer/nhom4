@@ -15,8 +15,6 @@ Chủ đề: Thiết kế giao diện website dạy các khóa học miễn phí
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project.
-
 * [![HTML]
 * [![CSS]
 * [![JavaSricpt]
