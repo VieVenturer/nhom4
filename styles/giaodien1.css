@@ -1,0 +1,440 @@
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace
+}
+
+*,::after,::before {
+    box-sizing: border-box
+}
+
+
+
+
+h2,h3 {
+    margin-top: 0;
+    margin-bottom: .5rem
+}
+
+ul.scm {
+    margin-top: 0;
+    margin-bottom: 1rem
+}
+
+a.cmk {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline
+}
+
+img {
+    vertical-align: middle;
+    border-style: none
+}
+
+
+
+.vietconhda {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width: 576px) {
+    .vietconhda {
+        max-width:540px
+    }
+}
+
+@media (min-width: 768px) {
+    .vietconhda {
+        max-width:720px
+    }
+}
+
+@media (min-width: 992px) {
+    .vietconhda {
+        max-width:960px
+    }
+}
+
+@media (min-width: 1200px) {
+    .vietconhda {
+        max-width:1140px
+    }
+}
+
+.vietconhrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+.vietl5,.vietl7,.vietx4,.vietl8 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+@media (min-width: 992px) {
+
+    .vietl5 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%
+    }
+
+    .vietl7 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .vietx4 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%
+    }
+
+    .vietl8 {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.666667%;
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%
+    }
+}
+
+@supports ((-webkit-transform-style: preserve-3d) or (transform-style:preserve-3d)) {
+}
+
+@supports ((-webkit-transform-style: preserve-3d) or (transform-style:preserve-3d)) {
+}
+
+@supports ((-webkit-transform-style: preserve-3d) or (transform-style:preserve-3d)) {
+}
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: ""
+}
+
+@supports ((position: -webkit-sticky) or (position:sticky)) {
+}
+
+@media print {
+    *,::after,::before {
+        text-shadow: none!important;
+        box-shadow: none!important
+    }
+
+    a:not(.btn) {
+        text-decoration: underline
+    }
+
+    img {
+        page-break-inside: avoid
+    }
+
+    h2,h3 {
+        orphans: 3;
+        widows: 3
+    }
+
+    h2,h3 {
+        page-break-after: avoid
+    }
+
+    @page {
+        size: a3
+    }
+
+    body {
+        min-width: 992px!important
+    }
+
+    .vietconhda {
+        min-width: 992px!important
+    }
+}
+
+
+
+:root {
+    --swiper-theme-color: #007aff
+}
+
+:root {
+    --swiper-navigation-size: 44px
+}
+
+a:attr {
+    class: abc
+}
+
+.section_danhmuc_khoahoc {
+    margin-top: 50px;
+    margin-bottom: 50px
+}
+
+.section_danhmuc_khoahoc .vietss-title {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+    margin-bottom: 20px;
+    max-height: 460px;
+    overflow-y: scroll;
+    padding-right: 10px
+}
+
+.section_danhmuc_khoahoc .vietss-title::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.3);
+    -moz-box-shadow: inset 0 0 2px rgba(0,0,0,.3);
+    background-color: #364365
+}
+
+.section_danhmuc_khoahoc .vietss-title::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.3);
+    -moz-box-shadow: inset 0 0 2px rgba(0,0,0,.3);
+    border-radius: 5px;
+    background-color: #f5f5f5
+}
+
+.section_danhmuc_khoahoc .vietss-title::-webkit-scrollbar {
+    width: 5px;
+    background-color: #364365
+}
+
+.section_danhmuc_khoahoc .viets-link {
+    cursor: pointer;
+    padding: 10px 20px;
+    -webkit-box-shadow: 0 -2px 10px rgba(10,78,191,.14)!important;
+    margin-bottom: 28px;
+    position: relative
+}
+
+.section_danhmuc_khoahoc .viets-link:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 8px;
+    border-radius: 8px 8px 0 0;
+    left: 0;
+    top: 0;
+    background: #0265fa;
+}
+
+.section_danhmuc_khoahoc .viets-link:after {
+    content: "";
+    position: absolute;
+    left: 30px;
+    bottom: -12px;
+    width: 0;
+    height: 0;
+    clear: both;
+    
+}
+
+.section_danhmuc_khoahoc .viets-link h3 {
+    font-size: 16px;
+    font-weight: 800;
+    color: #000000;
+    padding-top: 8px
+}
+
+.section_danhmuc_khoahoc .viets-link span {
+    display: block;
+    color: #645a5a;
+    font-size: 14px;
+}
+
+.section_danhmuc_khoahoc .viets-link.mauvhu,.section_danhmuc_khoahoc .viets-link:hover {
+    background-color: #f4a0a0;
+    border-radius: 10px;
+}
+
+.section_danhmuc_khoahoc .viets-content {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s
+}
+
+.section_danhmuc_khoahoc .viets-content.mauvhu {
+    opacity: 1;
+    visibility: visible;
+    height: auto
+}
+
+@media (min-width: 1200px) {
+    .vietconhda {
+        max-width:1200px
+    }
+}
+
+
+
+h2,h3 {
+    font-family: Nunito,serif;
+    line-height: 1.4
+}
+
+a:focus {
+    outline: 0
+}
+
+ul {
+    list-style: none outside
+}
+
+a {
+    color: #403938;
+    text-decoration: none;
+    background: 0 0
+}
+
+img {
+    border: 0 none;
+    max-width: 100%;
+    height: auto
+}
+
+a:focus {
+    outline: 0;
+    box-shadow: none
+}
+
+ul.vietss li {
+    background: 0 0;
+    display: inline-block;
+    cursor: pointer
+}
+
+.viets-content {
+    opacity: 0;
+    visibility: hidden;
+    height: 0
+}
+
+.title_module_main {
+    position: relative;
+    margin-bottom: 30px;
+    z-index: 1
+}
+
+@media (max-width: 767px) {
+    .title_module_main {
+        margin-bottom:20px
+    }
+}
+.dacbietluon {
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.vietamnu {
+    color: #93d127;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.title_module_main h2 {
+    font-family: 'Exo', sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+    margin: 0;
+    position: relative;
+    padding: 20px 0 0;
+    text-transform: uppercase
+}
+
+@media (max-width: 1199px) {
+    .title_module_main h2 {
+        font-size:32px
+    }
+}
+
+@media (max-width: 767px) {
+    .title_module_main h2 {
+        font-size:16px;
+        padding: 15px 0 0
+    }
+}
+
+.title_module_main h2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 77px;
+    height: 5px;
+    background: #2ffb2c;
+    left: 0;
+    border-radius: 5px
+}
+
+@media (max-width: 767px) {
+    .title_module_main h2:before {
+        width:47px;
+        height: 3px
+    }
+}
+
+.title_module_main h2 span {
+    color: #403938;
+    position: relative;
+    display: block
+}
+.botronviet {
+    border-radius: 20px;
+}

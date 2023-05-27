@@ -1,0 +1,23 @@
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+  }
+  
+  .contact-icons a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px 20px;
+
+  }
+  
+  .contact-icons img {
+    margin-top: 6px;
+    margin-bottom: 10px;
+  }

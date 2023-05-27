@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Khóa Học</title>
+
+    <link rel="shortcut icon" type="image/png" href="../img/logotrl.ico"/>
+    <script>
+        fetch('../Anlpha/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+    <script>
+        fetch('../Anlpha/thongtinkhoahoc.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('thongtinkhoahoc').innerHTML = data;
+            });
+    </script>
+</head>
+<div id="header"></div>
+<div id="thongtinkhoahoc"></div>
+
+<script src="../app.js"></script>
+
+<body>
+    
+</body>
+
+</html>
