@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Nhóm 4 - Learning </title>
+    <link rel="shortcut icon" type="image/png" href="./img/logotrl.ico" />
+    <script>
+        const fetchAndSetHTML = (url, elementId) => {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                });
+        };
+        Promise.all([
+            fetchAndSetHTML('./Anlpha/header.html', 'header'),
+            fetchAndSetHTML('./Anlpha/giaodiendau.html', 'giaodiendau'),
+            fetchAndSetHTML('./Anlpha/giaodiendau2.html', 'giaodiendau2'),
+            fetchAndSetHTML('dskhoahoc.shtml', 'dskhoahoc'),
+            fetchAndSetHTML('./Anlpha/footer.html', 'footer'),
+            fetchAndSetHTML('./Anlpha/giaodien1.html', 'giaodien1'),
+            fetchAndSetHTML('./Anlpha/giaodien2.html', 'giaodien2'),
+
+            fetchAndSetHTML('book.shtml', 'book')
+        ]);
+    </script>
+
+</head>
+
+<body>
+    <div id="header"></div>
+    <script src="../app.js"></script>
+    <script src="./js/jquery.min.js"></script>
+
+    <div id="giaodiendau"></div>
+    <div id="giaodien1"></div>
+    <div id="giaodien2"></div>
+
+    <div id="giaodiendau2"></div>
+
+    <div id="footer"></div>
+</body>
+<script>
+    function mauvhu(obj) {
+        $('.section_danhmuc_khoahoc ul li').removeClass('mauvhu');
+        $(obj).addClass('mauvhu');
+        var id = $(obj).attr('data-viets');
+        $('.viets-content').removeClass('mauvhu');
+        $(id).addClass('mauvhu');
+    }$(document).ready(function () {
+    $('.section_danhmuc_khoahoc ul li').click(function () {
+        mauvhu(this);
+        return true;
+    });
+});
+
+</script>
+</html>
