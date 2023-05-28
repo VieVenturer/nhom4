@@ -1,0 +1,95 @@
+.my-8 {
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+}
+
+.py-24 {
+   padding-top: 0rem;
+   padding-bottom: 0rem;
+}
+
+
+
+.text-white {
+   color: #800a0a;
+}
+
+.font-hairline {
+   font-weight: 300;
+}
+
+.text-2xl {
+   font-size: 1.5rem;
+}
+
+.text-center {
+   text-align: center;
+}
+
+.viesc-16 {
+   margin-bottom: 4rem;
+}
+
+.flex {
+   display: flex;
+}
+
+.flex-col {
+   flex-direction: column;
+}
+
+.flex-col-reverse {
+   flex-direction: column-reverse;
+}
+
+.viethzs {
+   min-width: 1024px;
+}
+
+.items-center {
+   align-items: center;
+}
+
+.justify-center {
+   justify-content: center;
+}
+
+.mx-12 {
+   margin-left: 1.5rem;
+   margin-right: 1.5rem;
+}
+
+.w-64 {
+   width: 16rem;
+}
+
+.mb-12 {
+   margin-bottom: 3rem;
+}
+
+.text-6xl {
+   font-size: 4rem;
+}
+
+.font-extrabold {
+   font-weight: 800;
+}
+
+.text-blue-200 {
+   color: #123868;
+}
+
+@media (min-width: 768px) {
+   .flex-col {
+      flex-direction: row;
+   }
+
+   .flex-col-reverse {
+      flex-direction: column-reverse;
+   }
+
+   .mx-12 {
+      margin-left: 3rem;
+      margin-right: 3rem;
+   }
+}
