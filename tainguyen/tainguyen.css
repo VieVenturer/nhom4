@@ -1,0 +1,55 @@
+:root{
+    --font-family: 'Quicksand', sans-serif;
+}
+body{
+    margin: 40px 50px;
+}
+.Container{
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: #b0c0ed 0px 2px 33px 0px;
+    margin: 50px 0 0;
+    padding: 25px 25px 75px;
+}
+h1{
+    font-family: var(--font-family);
+    font-weight: 700;
+    margin-left: 30px;
+}
+.Video{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.Father + .Father{
+    margin-top: 60px;
+}
+iframe {
+    border-radius: 5px;
+}
+@media screen and (max-width : 780px){
+    .Video{
+        display: flex;
+        
+    }
+    iframe{
+        width: 100%;
+    }
+    iframe + iframe{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width : 1210px){
+    .Father{
+        display: flex;
+        -webkit-flex-wrap: wrap; 
+        flex-wrap:  wrap;
+    }
+    iframe{
+        width: 100%;
+    }
+    iframe + iframe{
+        margin-top: 30px;
+    }
+}

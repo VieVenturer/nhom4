@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhóm 4 - Learning</title>
+    <link rel="shortcut icon" type="image/png" href="./img/logotrl.ico" />
+    <script>
+        const fetchAndSetHTML = (url, elementId) => {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(elementId).innerHTML = data;
+                    evalScripts();
+                });
+        };
+        function evalScripts() {
+            const scripts = document.querySelectorAll('#content script');
+            scripts.forEach(script => {
+                eval(script.textContent);
+            });
+        }
+        Promise.all([
+            fetchAndSetHTML('./Anlpha/header.html', 'header'),
+            fetchAndSetHTML('./Anlpha/giaodiendau.html', 'giaodiendau'),
+            fetchAndSetHTML('./Anlpha/giaodiendau2.html', 'giaodiendau2'),
+            fetchAndSetHTML('dskhoahoc.shtml', 'dskhoahoc'),
+            fetchAndSetHTML('./Anlpha/footer.html', 'footer'),
+            fetchAndSetHTML('./Anlpha/giaodien1.html', 'giaodien1'),
+            fetchAndSetHTML('./Anlpha/giaodien2.html', 'giaodien2'),
+            fetchAndSetHTML('./Anlpha/conso.html', 'conso'),
+            fetchAndSetHTML('book.shtml', 'book')
+        ]);
+
+    </script>
+    <script>
+        var hasAnimated = false;
+
+        function animateNumber(finalNumber, duration = 5000, startNumber = 0, callback) {
+            const startTime = performance.now()
+            function updateNumber(currentTime) {
+                const elapsedTime = currentTime - startTime
+                if (elapsedTime > duration) {
+                    callback(finalNumber)
+                } else {
+                    const rate = elapsedTime / duration
+                    const currentNumber = Math.round(rate * finalNumber)
+                    callback(currentNumber)
+                    requestAnimationFrame(updateNumber)
+                }
+            }
+            requestAnimationFrame(updateNumber)
+        }
+
+        function handleScroll() {
+            var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+            var scrollPosition = window.scrollY || window.pageYOffset || document.body.scrollTop + (document.documentElement && document.documentElement.scrollTop || 0);
+
+            if (scrollPosition > (0.85 * windowHeight) && !hasAnimated) {
+                hasAnimated = true;
+
+                animateNumber(4000, 15000, 0, function (number) {
+                    const formattedNumber = number.toLocaleString()
+                    document.getElementById('transaction-count').innerText = formattedNumber
+                })
+
+                animateNumber(46, 8000, 0, function (number) {
+                    const formattedNumber = number.toLocaleString()
+                    document.getElementById('city-count').innerText = formattedNumber
+                })
+
+                animateNumber(300, 10000, 0, function (number) {
+                    const formattedNumber = number.toLocaleString()
+                    document.getElementById('customer-count').innerText = formattedNumber
+                })
+
+                window.removeEventListener('scroll', handleScroll);
+            }
+        }
+        window.addEventListener('scroll', handleScroll);
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <script src="../app.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <div id="content">
+        <div id="giaodiendau"></div>
+        <div id="giaodien1"></div>
+        <div id="giaodien2"></div>
+        <div id="conso"></div>
+        <div id="giaodiendau2"></div>
+        <div id="footer"></div>
+    </div>
+
+</body>
+
+
+</html>

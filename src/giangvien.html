@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link rel="stylesheet" href="../styles/trangchu.css">
+  <link rel="stylesheet" href="../styles/lydo.css">
+  <link rel="stylesheet" href="../styles/tailieu.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <link rel="stylesheet" href="../styles/lienhe.css">
+  <title> Nhóm 4 - Learning </title>
+  <link rel="shortcut icon" type="image/png" href="../img/logotrl.ico"/>
+<script>
+  const fetchAndSetHTML = (url, elementId) => {
+      fetch(url)
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById(elementId).innerHTML = data;
+          });
+  };
+  Promise.all([
+      fetchAndSetHTML('../Anlpha/header.html', 'header'),
+      fetchAndSetHTML('../Anlpha/thanhvien.html', 'thanhvien'),
+
+  ]);
+</script>
+</head>
+
+<body>
+  <div id="header"></div>
+        <script src="../app.js"></script>
+    <br><br><br><br>
+    <div id="thanhvien"></div>
+
+</body>
+
+</html>
