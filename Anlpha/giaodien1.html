@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/giaodien1.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="../js/jquery.min.js" type="text/javascript"></script>
+    <section class="awe-section-2">	
+	<section class="section_danhmuc_khoahoc">
+	<div class="vietconhda">
+		<div class="title_module_main">
+			<h2>
+				<span>THÔNG TIN VỀ CHÚNG TÔI</span>
+			</h2>
+		</div>
+		<div class="vietconhrow">
+			<div class="vietx4 vietl5">
+				<ul class="vietss vietss-title clearfix scm">
+					<li class="viets-link mauvhu" data-viets="#viets-kh-1">
+						<h3 class="dacbietluon">THỜI GIAN THÀNH LẬP LÂU ĐỜI</h3>
+						<span class="vietamnu">Từ lúc thành lập đến nay đã kêu gọi được 1 tỷ người đầu tư tham gia vào dự án.</span>
+					</li>
+					<li class="viets-link " data-viets="#viets-kh-2">
+						<h3 class="dacbietluon">LỘ TRÌNH RÕ RÀNG, KHOA HỌC</h3>
+						<span class="vietamnu">Ở đây chúng tôi tự tin rằng sẽ có những lộ trình học đa dạng, lạ cho học viên</span>
+					</li>
+					<li class="viets-link " data-viets="#viets-kh-3">
+						<h3 class="dacbietluon">PHƯƠNG PHÁP KÊU GỌI HỌC VIÊN</h3>
+						<span class="vietamnu">Thay đổi từng ngày, thay đổi từng cái nhỏ nhất, thay đổi cả tư duy sáng tạo.</span>
+					</li>
+					<li class="viets-link " data-viets="#viets-kh-4">
+						<h3 class="dacbietluon">CAM KẾT SẼ CÓ CHỨNG CHỈ 100%</h3>
+						<span class="vietamnu">Học viên được đảm bảo kết quả 100%, miễn phí cho học viên có nhu cầu học.</span>
+					</li>
+					<li class="viets-link " data-viets="#viets-kh-5">
+						<h3 class="dacbietluon">ĐỘI NGŨ GIẢNG VIÊN CHẤT LƯỢNG</h3>
+						<span class="vietamnu">Giảng viên ở đây đều có những tài lẻ riêng, truyền cảm hứng từ các chuyên gia.</span>
+					</li>
+					<li class="viets-link " data-viets="#viets-kh-6">
+						<h3 class="dacbietluon">MANG ĐẾN SỰ MỚI LẠ ĐỘC ĐÁO </h3>
+						<span class="vietamnu">Đến với chúng tôi bạn không cần phải lo khi chưa biết gì, chúng tôi sẽ hỗ trợ bạn.</span>
+					</li>
+				</ul>
+			</div>
+			<div class="vietl8 vietl7">
+				<div id="viets-kh-1" class="viets-content mauvhu content_exviets">
+					<a href="#">
+						<img class="botronviet" src="../img/dhdainam2.jpg" alt="Nhom4">
+					</a>
+				</div>
+				<div id="viets-kh-2" class="viets-content  content_exviets">
+					<a href="#">
+						<img class="botronviet" src="../img/dhdainam3.jpg" alt="Nhom4">
+					</a>
+				</div>
+				<div id="viets-kh-3" class="viets-content  content_exviets">
+					<a href="#">
+						<img class="botronviet" src="../img/dhdainam.png" alt="Nhom4">
+					</a>
+				</div>
+				<div id="viets-kh-4" class="viets-content  content_exviets">
+					<a href="#">
+						<img class="botronviet" src="../img/dhdainam4.png" alt="Nhom4">
+					</a>
+				</div>
+				<div id="viets-kh-5" class="viets-content  content_exviets">
+					<a href="#">
+						<img class="botronviet" src="../img/dhdainam5.png" alt="Nhom4">
+					</a>
+				</div>
+				<div id="viets-kh-6" class="viets-content  content_exviets">
+					<a href="#">
+						<img class="botronviet" src="../img/dhdainam6.png" alt="Nhom4">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<script>
+	function mauvhuviets(obj){
+		$('.section_danhmuc_khoahoc ul li').removeClass('mauvhu');
+		$(obj).addClass('mauvhu');
+		var id = $(obj).attr('data-viets');
+		$('.viets-content').removeClass('mauvhu');
+		$(id).addClass('mauvhu');
+	}
+	$('.section_danhmuc_khoahoc ul li').click(function(){
+		mauvhuviets(this);
+		return false;
+	});
+</script>
+</body>
+</html>

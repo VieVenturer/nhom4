@@ -1,0 +1,72 @@
+:root{
+    --font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    margin: 30px 80px; 
+}
+h1{
+    font-size: 28.5px;
+    display: inline;
+    color: #242424;
+    font-weight: 900;
+    line-height: 32.2px;
+    font-family: var(--font);
+}
+.Default-Container-Top{
+    font-size: 10px;
+    line-height: 11.5px;
+    margin: 0 0 60px;
+}
+.Default-Container-Top h2{
+    font-weight: 700;
+}
+.Default-Container-Top p{
+    color: #292929;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: var(--font);
+}
+.Default-Container-Mid h2{
+    color:#292929;
+    display:inline;
+    font-size:27px;
+    font-weight:600;
+    line-height:54px;
+    font-family: var(--font);
+}
+.Default-Container-Mid p{
+    color: #292929;
+    font-size:18px;
+    line-height:36px;
+    font-family: var(--font);
+}
+hr{
+    background-color:#dddddd;
+    color:#292929;
+    font-size:18px;
+    line-height:36px;
+    margin:40px 0px;
+}
+.Default-Container-Bottom{
+    font-family: var(--font);
+    color: #292929;
+    font-family: system-ui;
+    font-size: 18px;
+    line-height: 36px;
+    margin: 6px 0px;
+}
+h3{
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    color: #f05123;
+}
+@media screen and (max-width:900px) {
+    body{
+        margin: 30px 20px;
+    }
+    .Default-Container-Top{
+        margin: 0 0 30px;
+    }
+}
